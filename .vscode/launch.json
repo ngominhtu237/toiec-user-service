@@ -5,6 +5,19 @@
     "version": "0.2.0",
     "configurations": [
         {
+			"name": "Run mocha",
+			"type": "node",
+            "request": "launch",
+			"program": "C:/Users/Tu/AppData/Roaming/npm/node_modules/mocha/bin/_mocha",
+			"stopOnEntry": false,
+			"args": ["tests/repository-integration-tests/user-provider-test.js"],
+			"cwd": "${workspaceRoot}",
+			"runtimeExecutable": null,
+			"env": { 
+                "NODE_ENV": "local"
+            }
+		},
+        {
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
