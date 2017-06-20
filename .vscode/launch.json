@@ -10,18 +10,25 @@
             "request": "launch",
 			"program": "C:/Users/Tu/AppData/Roaming/npm/node_modules/mocha/bin/_mocha",
 			"stopOnEntry": false,
-			"args": ["tests/repository-integration-tests/user-provider-test.js"],
+			"args": ["tests/repository-integration-tests/user-test.js"],
 			"cwd": "${workspaceRoot}",
 			"runtimeExecutable": null,
 			"env": { 
-                "NODE_ENV": "local"
+                "NODE_ENV": "dev"
             }
 		},
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${file}"
+            "name": "Launch API",
+            "program": "${workspaceRoot}/apps/api/app.js",
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "env": {
+                "NODE_ENV": "dev"
+            }
         }
     ]
 }
