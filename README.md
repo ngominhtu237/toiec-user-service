@@ -1,2 +1,2 @@
-# toiec-user-service
-TOIEC-USER-SERVICE
+# user-service
+USER-SERVICE
